@@ -1,10 +1,16 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'QiitaClient.dart';
 
 void main() {
   runApp(MyApp(
     items: List<String>.generate(10000, (i) => "$i番目"),
   ));
+  QiitaClient.fetchArticle().then((articles) => {
+    articles.forEach((article) => {
+      print(article.title)
+    })
+  });
 }
 
 class MyApp extends StatelessWidget {
