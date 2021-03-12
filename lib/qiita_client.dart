@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
-import 'Articles.dart';
+import 'article.dart';
 
 class QiitaClient {
   static Future<List<Article>> fetchArticle() async {

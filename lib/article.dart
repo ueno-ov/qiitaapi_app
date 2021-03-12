@@ -1,4 +1,4 @@
-import 'User.dart';
+import 'user.dart';
 
 class Article {
   final String title;

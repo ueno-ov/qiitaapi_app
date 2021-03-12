@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'QiitaClient.dart';
+import 'qiita_client.dart';
 
 void main() {
   runApp(MyApp(
