@@ -12,16 +12,19 @@ class ArticleDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: MaterialApp(
-        title: 'Fetch Data Example',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: Scaffold(
-          body: Center(
-            child: WebView(
-              initialUrl: article.url,
+    return Scaffold(
+      appBar: AppBar(),
+      body: SafeArea(
+        child: MaterialApp(
+          title: 'Fetch Data Example',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          home: Scaffold(
+            body: Center(
+              child: WebView(
+                initialUrl: article.url,
+              ),
             ),
           ),
         ),
